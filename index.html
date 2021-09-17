@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,13 +11,15 @@ html {
 scroll-behavior: smooth;
 }
 body {
-  background-color: snow;
+  background-color: rgb(23,23,23);
   font-family: Poppins;
+  margin: 0;
+  margin:0;
+  color: white;
 }
 
 h1 {
-font-family: Abril Fatface;
-font-size: 48px;
+color: white;
 }
 
 p {
@@ -26,8 +29,8 @@ p {
 nav {
 padding: 10px;
 }
-tagname {
-padding: 32px;
+.subco {
+margin: 5px;
 }
 a {
 text-decoration: none;
@@ -38,22 +41,26 @@ margin-top: 0px;
 width: 75%;
 padding: 10px;
 text-align: justify;
- 
+ margin:0;
 }
 .cona { 
-    width: 100%;
+    width: 75%;
     border-radius: 10px;
-    margin-top: 100px;
   display: table;
+  margin-left:12.5%;
 }
 button {
-background-color: white;
-border: 2px solid white;
-border-radius: 60px;
+border: 0px solid white;
+border-radius: 5px;
+color: white;
  font-family: Poppins;
+ padding: 5px;
+ background-color:rgb(73,73,73);
+ margin: 5px;
 }
 .subco {
-margin-left: 5%;
+
+margin:0;
 }
 .im {
 float: right;
@@ -92,10 +99,21 @@ padding: 2px;
             font-size: 20px;
             transition: 1s;
         }
+        a{
+color: white;
+text-decoration: none;
+}
+a:hover {
+background-color: rgb(93,93,93);
+}
+.subco {
+margin-left: 5%;
+}
 @media screen and (max-width:600px) {
  body, .conq, .cona, #blog  {
 display: block;
-width: 95%;
+width: 100%;
+margin-left: 0;
 word-break: break-all;
 line-height: 1.8;
 } 
@@ -116,54 +134,65 @@ display: inline-block;
 margin-left: -95px;
 } 
 }
-@media (prefers-color-scheme: dark) {
-body, .im {
-background-color: rgb(23,23,23);
-color: white;
+@media screen and (max-width: 3000px) {
+.nav1 {
+display: none;
 }
-.concq {
-background-color: rgb(23,23,23);
-color: white;
-  display: table-cell;
 }
-button {
-background-color: rgb(93,93,93);
-border: 0px solid black;
-color: white;
+
+@media screen and (max-width: 600px) {
+.navbar {
+display: none;
 }
-a {
-color: white;
 }
-hr {
-border: 0px solid black;
+
+
+@media screen and (max-width: 600px) {
+.nav1 {
+display: block;
 }
 }
 </style>
 <body>
-<nav>
-<tagname>Colonial Rule</tagname>
-<div class="nav">
-            <a class="navco a" href="https://subhransuindia.github.io/home.github.io/">🏠</a>
-            <a class="navco b" href="#blog">👨</a>
-            <a class="navco b" href="https://subhransuindia.github.io/more.github.io/">🍔</a>
-        </div>
-<a class="im se">🔍</a>
-<a class="im se" contenteditable="true">Search</a>
-<a class="im" href="https://subhransuindia.github.io/more.github.io/">More</a>
-<a class="im" href="#">Blog</a>
-<a class="im" href="https://subhransuindia.github.io/home.github.io/">Home</a>
+<div class="lap">
+<nav class="navbar" style="padding: 16px; background-color:rgb(53,53,53); text-align: left;position: fixed;width: 100%;top:0;">
+<tagname style="padding-right: 10px;float: left;color: white;border-right: 2px solid white;font-family: Permanent Marker;">Blog</tagname>
+<div style="float: right;margin-right: 20px;">
+<a href="#" class="na" style="padding: 10px;border-radius: 10px;text-decoration: none;transition: 1s;">Home</a>
+<a href="#post" class="na" style="padding: 10px;border-radius: 10px;text-decoration: none;transition: 1s;">Blog</a>
+<a href="#post" class="na" style="padding: 10px;border-radius: 10px;text-decoration: none;transition: 1s;">More</a>
+<input style="font-family: Poppins;width:25%;background-color:rgb(73,73,73);border: 0px solid black;border-radius: 5px;padding: 5px;" placeholder="Search...">
+<tagname style="background-color:rgb(73,73,73);border-radius: 5px;padding: 2.5px;">🔍</tagname>
+</div>
 </nav>
+
+<details class="nav1" style="position: fixed;background-color:rgb(53,53,53);width: 100%;list-style: none;text-align: center;top:0;color: white;">
+<summary style="list-style: none;padding: 10px;">☰ Blog</summary>
+<div style="padding: 10px;text-align: center;">
+<a href="#" class="na" style="display:block;padding: 5px;border-radius: 10px;text-decoration: none;transition: 1s;">Home</a><br>
+<a href="#post" class="na" style="display:block;padding: 5px;border-radius: 10px;text-decoration: none;transition: 1s;">Blog</a><br>
+<a href="#post" class="na" style="display:block;padding: 5px;border-radius: 10px;text-decoration: none;transition: 1s;">More</a><br>
+<input style="font-family: Poppins;width:25%;background-color:rgb(73,73,73);border: 0px solid black;border-radius: 5px;padding: 5px;" placeholder="Search...">
+<tagname style="background-color:rgb(73,73,73);border-radius: 5px;padding: 2.5px;">🔍</tagname>
+</div>
+</details>
+
+<div class="con" style="width: 90%;padding: 5%;background-image: linear-gradient( rgb(53,53,53), rgb(23,23,23));">
+<h1 style="width: 60%;margin-top: 200px;font-size: 42px;">Blog</h1>
+<hr style="height: 3px;background-color:white;width: 60%;margin-left: 0px;">
+<kbd style="background-color: rgba(0,0,0,0.3); padding: 3.5px; border-radius: 10px; border: 1px solid black;">Website Made by me @s_p</kbd>
+
+<a href="#" class="nasv" style="margin-top: 10px;width: 20%;padding: 20px;display: block;padding: 5px;border-radius: 10px;text-decoration: none;transition: 1s;cursor: pointer;background-color:rgb(233,93,93);text-align: center">Read More</a><br>
+</div>
+
 <div class="cona">
-<div class="concq">
-<h1 id="blog">Blog</h1>
- <hr>
- <h2>SP</h2>
- <p>@s_p</p>
- <p>I started coding a few months ago, i.e. in May. I recently learned about w3.css. I was amazed to see it. So I started making this website with simple html,css.
+ <h2  style="margin: 10px;">SP</h2>
+ <p  style="margin: 10px;">@s_p</p>
+ <p  style="margin: 10px;">I started coding a few months ago, i.e. in May. I recently learned about w3.css. I was amazed to see it. So I started making this website with simple html,css.
 </p>
-<button>Like</button>
-<button>Share</button>
-<button contenteditable="true">Comment</button>
+<button style="margin: 10px;">Like</button>
+<button  style="margin: 10px;">Share</button>
+<button  style="margin: 10px;" contenteditable="true">Comment</button>
  <button>✈️</button>
  <h2 class="subco">SPP</h2>
  <p class="subco">@s_p_p</p>
@@ -179,7 +208,39 @@ border: 0px solid black;
 <button class="subco">Share</button>
 <button class="subco" contenteditable="true">Comment</button>
  <button>✈️</button>
+
+<h1 style="text-align: center">Articles</h1>
+<hr style="height: 2px;background-color:white;width: 90%;">
+
+<div style="margin-left: 10px; margin-right: 10px;">
+<div style=" text-align: center; width: 100%;">
+<h2><a href="https://subhransuindia.github.io/colonialrule.github.io/">Colnial Rule</a></h2>
+<p>From trading with India to the war of 1857. Everything is written on this article. Click on "Colonial Rule" to see the article.</p>
 </div>
+
+<div style="text-align: center; width: 100%;">
+<h2><a href="https://subhransuindia.github.io/ashoka.github.io/">Ashoka</a></h2>
+<p>Get inspired by the story of Ashoka, the ruler who gave up the war after an incident.  Click on "Ashoka" to see the article.</p>
+</div>
+</div>
+</div>
+
+
+<hr>
+
+<div style="background-image: linear-gradient(360deg, rgb(43,43,43), rgb(23,23,23));">
+<h1 style="text-align: center;">Thanks For Visiting</h1>
+<hr style="height: 2px;background-color:white;width: 60%;">
+
+<div style="display: table;magin-bottom: 10px;">
+<div style="display: table-cell; text-align: left; width: 33%;">
+<p style="color: rgba(255,255,255,0.7);text-align: center;">*Blog feature doesn't work.. 😓</p>
+</div>
+
+</div>
+
+ <iframe style="width: 90%; height: 500px;margin-left: 5%; border-radius: 10px;" src="https://docs.google.com/forms/d/e/1FAIpQLSd9hO-OQwpi2BEeHo1S2y7VoM7hUnYs12egqA4290T-M5Fcig/viewform?usp=sf_link">
+ </div>
 
 </body>
 </html>
